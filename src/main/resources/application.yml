@@ -1,5 +1,7 @@
 server:
   port: 8082
+  servlet:
+    context-path: /swaggerTest
 spring:
   freemarker:
     suffix: .html
@@ -32,6 +34,8 @@ spring:
         max-wait: 3000s
         max-idle: 2
     timeout: 5000s
+  application:
+    name: swaggerTest
 
 #mybatis相关配置
 mybatis:
