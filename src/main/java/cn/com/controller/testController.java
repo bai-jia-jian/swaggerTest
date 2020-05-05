@@ -25,8 +25,8 @@ public class testController {
         model.addAttribute("ss","1");
         PageResult<User> list = userService.queryUserById(id);
 //        redisUtil.set("tb",user.toString());
-        BeanController con=new BeanController();
-        String bean = con.getBean("1");
+//        BeanController con=new BeanController();
+//        String bean = con.getBean("1");
         return "index";
     }
     @RequestMapping("/fuck")
