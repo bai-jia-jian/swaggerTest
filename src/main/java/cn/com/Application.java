@@ -13,10 +13,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class Application extends SpringBootServletInitializer{
     public static void main(String args[]){
         SpringApplication.run(Application.class,args);
-//        ConfigurableApplicationContext context = SpringApplication.run(Application.class);
-//        BeanUtil.context=context;
     }
-
     //打包到服务器需要继承该初始化类
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
